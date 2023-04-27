@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Casa de Cambio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="operacion.css">
+	<script src="casadecambio.js"></script>
+</head>
+<body>
+	<h1>Casa de Cambio</h1>
+	<p>Elija la moneda que maneja:</p>
+	<input type="radio" id="moneda_soles" name="moneda" value="soles">
+	<label for="moneda_soles">Soles</label>
+	<input type="radio" id="moneda_dolares" name="moneda" value="dolares">
+	<label for="moneda_dolares">Dólares</label>
+	<input type="radio" id="moneda_euros" name="moneda" value="euros">
+	<label for="moneda_euros">Euros</label>
+    <p>Ingrese el monto que desea cambiar:</p>
+	<input type="number" id="monto">
+	<p>Elija el tipo de cambio:</p>
+	<input type="radio" id="cambio_soles" name="cambio" value="soles">
+	<label for="cambio_soles">Soles</label>
+	<input type="radio" id="cambio_dolares" name="cambio" value="dolares">
+	<label for="cambio_dolares">Dólares</label>
+	<input type="radio" id="cambio_euros" name="cambio" value="euros">
+	<label for="cambio_euros">Euros</label>
+	<br><br>
+	<button onclick="calcularCambio()">Cotizar</button>
+	<p>El nuevo monto del cambio es: <span id="resultado"></span></p>
+</body>
+</html>
